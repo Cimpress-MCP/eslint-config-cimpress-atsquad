@@ -1,0 +1,15 @@
+{
+  "name": "eslint-config-cimpress-atsquad",
+  "version": "1.0.0",
+  "description": "ESLint config from the Cimpress AT Squad",
+  "main": "lib/index.js",
+  "author": "Cimpress AT Squad <atsquad@cimpress.com>",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "4.17.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-mocha": "4.11.0",
+    "eslint-plugin-node": "6.0.0",
+    "eslint-plugin-promise": "3.6.0"
+  }
+}

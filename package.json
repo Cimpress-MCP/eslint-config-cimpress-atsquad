@@ -11,5 +11,9 @@
     "eslint-plugin-mocha": "^4.11.0",
     "eslint-plugin-node": "^6.0.0",
     "eslint-plugin-promise": "^3.6.0"
+  },
+  "devDependencies": {
+    "ci-build-tools": "1.0.13",
+    "commander": "2.14.1"
   }
 }

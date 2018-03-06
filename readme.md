@@ -16,6 +16,4 @@ A set of opinionated ESLint rules from the AT Squad at Cimpress.
 
 ## License
 
-Copyright &copy; Cimpress 2018
-
 [Apache License 2.0](./LICENSE)

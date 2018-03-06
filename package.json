@@ -4,7 +4,7 @@
   "description": "ESLint config from the Cimpress AT Squad",
   "main": "lib/index.js",
   "author": "Cimpress AT Squad <atsquad@cimpress.com>",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Cimpress-MCP/eslint-config-cimpress-atsquad.git"

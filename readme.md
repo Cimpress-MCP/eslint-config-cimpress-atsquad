@@ -16,4 +16,4 @@ A set of opinionated ESLint rules from the AT Squad at Cimpress.
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT)
+[Apache License 2.0](./LICENSE)

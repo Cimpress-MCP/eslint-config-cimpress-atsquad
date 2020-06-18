@@ -14,22 +14,6 @@ module.exports = {
         "plugin:prettier/recommended"
     ],
     rules: {
-        "prettier/prettier": [
-            "error",
-            {
-                printWidth: 100,
-                tabWidth: 2,
-                useTabs: false,
-                semi: true,
-                singleQuote: true,
-                quoteProps: 'as-needed',
-                jsxSingleQuote: false,
-                trailingComma: 'all',
-                bracketSpacing: true,
-                jsxBracketSameLine: false,
-                arrowParens: 'always'
-            }
-        ],
         "no-underscore-dangle": [
             "error",
             {

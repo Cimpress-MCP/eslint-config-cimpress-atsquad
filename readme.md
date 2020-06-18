@@ -5,11 +5,14 @@ A set of opinionated ESLint rules with Prettier integration from the AT Squad at
 
 ## Usage
 1. `yarn add -D eslint-config-cimpress-atsquad eslint prettier`
-2. create a file named `.eslintrc` in your project:
+2. add the following sections to your `package.json`
 
 ```javascript
 {
-  "extends": "cimpress-atsquad"
+  "eslintConfig": {
+      "extends": "cimpress-atsquad"
+    },
+  "prettier": "eslint-config-cimpress-atsquad/prettier",
 }
 ```
 

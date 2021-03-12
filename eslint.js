@@ -14,10 +14,10 @@ module.exports = {
         "plugin:prettier/recommended"
     ],
     rules: {
-        "eslint sort-imports": [2, {
+        "sort-imports": [2, {
             "ignoreMemberSort": true
         }],
-        "eslint class-methods-use-this": "off",
+        "class-methods-use-this": "off",
         "no-underscore-dangle": [
             "error",
             {

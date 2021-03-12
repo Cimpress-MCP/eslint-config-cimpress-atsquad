@@ -14,10 +14,8 @@ module.exports = {
         "plugin:prettier/recommended"
     ],
     rules: {
-        "sort-imports": [2, {
-            "ignoreMemberSort": true
-        }],
-        "class-methods-use-this": "off",
+        "import/order": ["off"],
+        "class-methods-use-this": ["off"],
         "no-underscore-dangle": [
             "error",
             {

@@ -14,6 +14,8 @@ module.exports = {
         "plugin:prettier/recommended"
     ],
     rules: {
+        "import/order": ["off"],
+        "class-methods-use-this": ["off"],
         "no-underscore-dangle": [
             "error",
             {

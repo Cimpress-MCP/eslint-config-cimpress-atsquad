@@ -28,7 +28,7 @@ module.exports = {
         "import/prefer-default-export": [
             "off"
         ],
-        "complexity": ["error", 4],
+        "complexity": ["error", 6],
         "unicorn/filename-case": [
             "error",
             {

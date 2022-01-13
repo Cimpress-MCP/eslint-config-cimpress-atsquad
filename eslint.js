@@ -5,7 +5,8 @@ module.exports = {
     plugins: [
         "prettier",
         "jest",
-        "unicorn"
+        "unicorn",
+        "import"
     ],
     extends: [
         "airbnb-typescript/base",

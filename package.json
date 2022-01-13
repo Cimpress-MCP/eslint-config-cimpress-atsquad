@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cimpress-atsquad",
-  "version": "2.2.0-alpha.2",
+  "version": "2.2.0-beta",
   "description": "ESLint config from the Cimpress AT Squad",
   "main": "eslint.js",
   "author": "Cimpress AT Squad <atsquad@cimpress.com>",

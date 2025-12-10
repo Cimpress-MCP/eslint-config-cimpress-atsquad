@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cimpress-atsquad",
-  "version": "2.2.0-beta",
+  "version": "2.2.1-beta",
   "description": "ESLint config from the Cimpress AT Squad",
   "main": "eslint.js",
   "author": "Cimpress AT Squad <atsquad@cimpress.com>",
@@ -14,7 +14,7 @@
     "@typescript-eslint/parser": "5.9.1",
     "eslint-config-airbnb-typescript": "16.1.0",
     "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-import": "2.32.0",
     "eslint-plugin-jest": "23.13.2",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-unicorn": "40.0.0"

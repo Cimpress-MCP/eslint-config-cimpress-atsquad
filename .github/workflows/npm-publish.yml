@@ -13,9 +13,9 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@master
         with:
-          node-version: 12.18.0 # latest LTS as of June 2020
+          node-version: 20
       - name: Publish if version has been updated
-        uses: git config --global --add safe.directory /github/workspace && pascalgn/npm-publish-action@4f4bf159e299f65d21cd1cbd96fc5d53228036df
+        uses: pascalgn/npm-publish-action@1.3.9
         with: # All of theses inputs are optional
           tag_name: "v%s"
           tag_message: "v%s"

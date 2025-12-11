@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: 12.18.0 # latest LTS as of June 2020
       - name: Publish if version has been updated
-        uses: pascalgn/npm-publish-action@4f4bf159e299f65d21cd1cbd96fc5d53228036df
+        uses: git config --global --add safe.directory /github/workspace && pascalgn/npm-publish-action@4f4bf159e299f65d21cd1cbd96fc5d53228036df
         with: # All of theses inputs are optional
           tag_name: "v%s"
           tag_message: "v%s"

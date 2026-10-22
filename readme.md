@@ -34,22 +34,27 @@ listed at the top of the file and put the options from `prettier.js` into a Pret
 
 ## Publishing new version
 
-Publishing is done by the `npm-publish` GitHub workflow (`.github/workflows/npm-publish.yml`) on every push to `master`.
-It publishes the version from `package.json` when that version is not on npm yet, and creates the git tag `v<version>`.
+Publishing is done by the `NPM publish` GitHub workflow (`.github/workflows/npm-publish.yml`).
 
-1. Create a branch and bump `version` in `package.json` following semver. Changing rules or raising a peer dependency
-   range is a breaking change and needs a new major version.
-2. Open a pull request and merge it to `master`.
-3. Check the `npm-publish` run in the Actions tab. The new version should be on npm and the tag `v<version>` in the repo.
+1. Create a branch and bump `version` in `package.json` following semver, e.g. to `3.1.0`. Changing rules or raising a
+   peer dependency range is a breaking change and needs a new major version.
+2. Open a pull request titled `Release 3.1.0` and merge it to `master`. The commit that lands on `master` must contain
+   `Release ` in its message. A merge commit includes the pull request title, and with squash merge use the same text as
+   the commit title.
+3. The workflow runs on the push to `master` and, because of that commit message, runs `npm publish --access public`.
+   Check the run in the Actions tab and the new version on npm.
 
-Versions with a suffix (e.g. `3.1.0-beta`) are published with the `next` tag, so `npm i` still installs the last stable
-version. Stable versions get the `latest` tag.
+Pushes to `master` without `Release ` in the commit message run the workflow but skip publishing. Pushing a tag
+`v*` also triggers the workflow, and it publishes if the tagged commit message contains `Release `.
 
-The workflow needs the `NPM_AUTH_TOKEN` repository secret (an npm automation token with publish rights for the package).
-If the publish fails, fix the cause and re-run the workflow; versions that are already on npm are skipped.
+The workflow authenticates with the `NPM_TOKEN` repository secret. Set it up once under the repository's
+Settings > Secrets and variables > Actions, using an npm automation token with publish rights for the package.
 
-To publish manually, log in with `npm login` and run `npm publish --access public` (add `--tag next` for suffixed
-versions). Use `npm pack --dry-run` first to check the package contents (`eslint.mjs`, `prettier.js`, readme, license).
+If a publish fails, fix the cause and re-run the workflow. npm refuses to publish a version that already exists, so
+bump the version first if it was published partially.
+
+To publish manually, run `npm login` and `npm publish --access public`. Use `npm pack --dry-run` first to check the
+package contents (`eslint.mjs`, `prettier.js`, readme, license).
 
 ## License
 
